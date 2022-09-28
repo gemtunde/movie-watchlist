@@ -10,8 +10,12 @@ const Watchlist = () => {
         <div className="header">
           <h1 className="heading">My Watchlist</h1>
         </div>
-        <div className="movie-grid">
-          {
+        
+         {
+          watchlist.length > 0 ?
+          (
+            <div className="movie-grid">
+             {
             watchlist.map(movie => (
               <MovieCard 
                movie={movie}
@@ -19,7 +23,14 @@ const Watchlist = () => {
               />
             ))
           }
-        </div>
+             </div>
+          ) :
+          (
+            <h2 className='no-movies'>
+             No movies in the watchlist
+            </h2>)
+         }
+     
       </div>
     </div>
   )
