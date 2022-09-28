@@ -27,6 +27,7 @@ const Add = () => {
         <div className="container">
             <div className="add-content">
                 <div className="input-wrapper">
+                    <p>video stopped at 36:52</p>
                     <input
                         type='text'
                         placeholder='Search for a movie'
